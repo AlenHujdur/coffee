@@ -4,14 +4,18 @@
 
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-  root.hello = function() {
-    return alert("It works!");
-  };
+  // root.hello = function() {
+  //   return alert("It works!");
+  // };
 
-  xc = 5;
+  // xc = 5;
 
   // document.getElementById("id1").addEventListener("load", hello)
   // doc.innerHTML = hello
-  console.log(xc);
+  // console.log xc
+  root.hello = function() { 
+    $("#id2").click(function() {
+      return alert("hey Alen!");
+  });}
 
 }).call(this);
